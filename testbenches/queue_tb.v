@@ -39,8 +39,10 @@ module queue_tb ();
         #20 rd_en = 1'b1; // 250
         #30 rd_en = 1'b0; // 280
 
+        #40 rd_en = 1'b1; // 320
+        #10 rd_en = 1'b0; // 330
         
-        #300 $finish;
+        #400 $finish;
         $display("tested");
     end
 
